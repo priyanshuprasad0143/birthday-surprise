@@ -1,0 +1,48 @@
+.gift-page{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:linear-gradient(180deg,#040816,#09172d,#10244b);
+color:white;
+padding-top:60px;
+}
+
+.gift-box{
+font-size:170px;
+cursor:pointer;
+user-select:none;
+margin-top:50px;
+margin-bottom:40px;
+}
+
+.gift-page h1{
+font-size:48px;
+margin-bottom:15px;
+}
+
+.gift-page p{
+font-size:22px;
+opacity:.8;
+}
+
+@media(max-width:768px){
+
+.gift-box{
+font-size:120px;
+margin-top:30px;
+margin-bottom:25px;
+}
+
+.gift-page h1{
+font-size:34px;
+}
+
+.gift-page p{
+font-size:18px;
+text-align:center;
+padding:0 20px;
+}
+
+}

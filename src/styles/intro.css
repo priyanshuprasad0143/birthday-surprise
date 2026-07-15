@@ -1,0 +1,105 @@
+.intro-container{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+position:relative;
+background:linear-gradient(180deg,#030311,#09152e,#11224a,#1c3061);
+}
+
+.intro-card{
+position:relative;
+z-index:2;
+width:90%;
+max-width:700px;
+padding:50px;
+text-align:center;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.15);
+border-radius:30px;
+box-shadow:0 20px 60px rgba(0,0,0,.4);
+color:white;
+}
+
+.intro-card h3{
+font-size:28px;
+margin-bottom:20px;
+}
+
+.intro-card h1{
+font-size:65px;
+margin-bottom:25px;
+}
+
+.intro-card p{
+font-size:22px;
+line-height:1.7;
+margin-bottom:45px;
+}
+
+.intro-card button{
+padding:18px 45px;
+font-size:20px;
+border:none;
+border-radius:50px;
+background:#ff4d88;
+color:white;
+cursor:pointer;
+transition:.35s;
+}
+
+.intro-card button:hover{
+transform:scale(1.08);
+box-shadow:0 0 35px #ff4d88;
+}
+
+.stars{
+position:absolute;
+inset:0;
+background-image:
+radial-gradient(white 1px,transparent 1px),
+radial-gradient(white 1px,transparent 1px),
+radial-gradient(white 1px,transparent 1px);
+background-size:180px 180px,240px 240px,320px 320px;
+background-position:0 0,60px 80px,120px 40px;
+animation:twinkle 5s infinite alternate;
+opacity:.9;
+}
+
+@keyframes twinkle{
+from{
+opacity:.35;
+transform:scale(1);
+}
+to{
+opacity:1;
+transform:scale(1.05);
+}
+}
+
+@media(max-width:768px){
+
+.intro-card{
+padding:35px 25px;
+}
+
+.intro-card h1{
+font-size:42px;
+}
+
+.intro-card h3{
+font-size:22px;
+}
+
+.intro-card p{
+font-size:18px;
+}
+
+.intro-card button{
+width:100%;
+font-size:18px;
+}
+
+}

@@ -1,0 +1,73 @@
+.gallery-page{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+background:black;
+overflow:hidden;
+}
+
+.gallery-image{
+
+width:370px;
+height:520px;
+object-fit:cover;
+border-radius:25px;
+box-shadow:0 0 40px rgba(255,255,255,.3);
+animation:fadeZoom 3s;
+
+}
+
+.gallery-text{
+
+margin-top:35px;
+font-size:28px;
+color:white;
+text-align:center;
+padding:0 20px;
+
+}
+
+@keyframes fadeZoom{
+
+0%{
+opacity:0;
+transform:scale(.8);
+}
+
+100%{
+opacity:1;
+transform:scale(1);
+}
+
+}
+.tap-text{
+
+margin-top:25px;
+
+font-size:18px;
+
+color:#ddd;
+
+opacity:.8;
+
+animation:blink 1.2s infinite;
+
+}
+
+@keyframes blink{
+
+0%{
+opacity:.3;
+}
+
+50%{
+opacity:1;
+}
+
+100%{
+opacity:.3;
+}
+
+}

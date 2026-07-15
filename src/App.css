@@ -1,0 +1,61 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+  width:100%;
+  min-height:100%;
+  font-family:Arial,Helvetica,sans-serif;
+  background:#000;
+  overflow-x:hidden;
+}
+
+body{
+  margin:0;
+  overflow-y:auto;
+}
+
+button{
+  cursor:pointer;
+  font-family:inherit;
+  border:none;
+}
+
+img{
+  display:block;
+  max-width:100%;
+  user-select:none;
+}
+
+.coming{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background:#050816;
+  color:white;
+  font-size:42px;
+  text-align:center;
+  padding:20px;
+}
+
+::-webkit-scrollbar{
+  width:8px;
+}
+
+::-webkit-scrollbar-track{
+  background:#111;
+}
+
+::-webkit-scrollbar-thumb{
+  background:#666;
+  border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background:#999;
+}

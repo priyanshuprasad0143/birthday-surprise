@@ -41,7 +41,11 @@ export default function Letter({ onFinish }) {
   return (
     <div className="letter-page">
       <div className="letter-card">
-        <pre className="letter-text">{text}</pre>
+        <div className="letter-content">
+          <pre className="letter-text">
+            {text}
+          </pre>
+        </div>
       </div>
     </div>
   );

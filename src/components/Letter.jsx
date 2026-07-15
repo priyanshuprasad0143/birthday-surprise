@@ -41,7 +41,7 @@ export default function Letter({ onFinish }) {
   return (
     <div className="letter-page">
       <div className="letter-card">
-        <pre>{text}</pre>
+        <pre className="letter-text">{text}</pre>
       </div>
     </div>
   );

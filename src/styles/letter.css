@@ -1,45 +1,99 @@
 .letter-page{
-
-height:100vh;
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-background:linear-gradient(180deg,#08111f,#10284c,#172f63);
-
-padding:30px;
-
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px 20px;
+  background:linear-gradient(180deg,#08142d,#132850,#1d3f7a);
+  overflow-y:auto;
 }
 
 .letter-card{
+  width:100%;
+  max-width:720px;
+  background:#fff;
+  color:#222;
+  border-radius:22px;
+  padding:40px 35px;
+  box-shadow:0 15px 45px rgba(0,0,0,.35);
+}
 
-width:700px;
+.letter-text{
+  margin:0;
+  white-space:pre-wrap;
+  word-break:break-word;
+  overflow-wrap:anywhere;
+  text-align:center;
+  font-family:"Georgia",serif;
+  font-size:30px;
+  line-height:1.9;
+}
 
-max-width:95%;
+/* Laptop */
 
-background:white;
+@media (max-width:1200px){
 
-border-radius:20px;
+  .letter-card{
+    max-width:650px;
+    padding:35px 30px;
+  }
 
-padding:40px;
-
-box-shadow:0 20px 50px rgba(0,0,0,.4);
+  .letter-text{
+    font-size:27px;
+  }
 
 }
 
-.letter-card pre{
+/* Tablet */
 
-white-space:pre-wrap;
+@media (max-width:768px){
 
-font-size:22px;
+  .letter-page{
+    align-items:flex-start;
+    padding:20px 12px;
+  }
 
-line-height:1.8;
+  .letter-card{
+    max-width:100%;
+    padding:25px 20px;
+    border-radius:18px;
+    margin-top:10px;
+  }
 
-font-family:Georgia,serif;
+  .letter-text{
+    font-size:20px;
+    line-height:1.75;
+  }
 
-color:#222;
+}
+
+/* Mobile */
+
+@media (max-width:480px){
+
+  .letter-page{
+    padding:15px 10px;
+  }
+
+  .letter-card{
+    padding:20px 16px;
+    border-radius:16px;
+  }
+
+  .letter-text{
+    font-size:18px;
+    line-height:1.65;
+  }
+
+}
+
+/* Small Mobile */
+
+@media (max-width:360px){
+
+  .letter-text{
+    font-size:16px;
+    line-height:1.6;
+  }
 
 }
